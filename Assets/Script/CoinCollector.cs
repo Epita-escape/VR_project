@@ -23,7 +23,7 @@ public class CoinCollector : MonoBehaviour
             // 상자와 충돌한 코인을 비활성화
             //other.gameObject.SetActive(false);
             Vector3 newPosition = other.gameObject.transform.position;
-            newPosition.y=-10;
+            newPosition.y=-300;
             other.gameObject.transform.position=newPosition;
             collectedCoins++;
             messageText.text = "Coin : " + collectedCoins;
