@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class CoinCollector : MonoBehaviour
 {
@@ -36,7 +37,9 @@ public class CoinCollector : MonoBehaviour
                 messageText.text = "Congratulations! You collected all the coins!";
                 box.SetActive(false);
                 door.SetActive(true);
-                
+
+
+                LoadMazeScene();
             }
         } else {
             Debug.Log("It is not a coin");
@@ -53,6 +56,28 @@ public class CoinCollector : MonoBehaviour
 
     }
 
+     public void LoadMazeScene()
+	{
+	    string sceneName = "Mazescene";
+		SceneManager.LoadScene(sceneName);
+	}
+
+    /*
+    public void LoadMazeScene()
+	{
+	    StartCoroutine(DelayedSceneLoad());
+	}
+
+	private IEnumerator DelayedSceneLoad()
+	{
+		    yield return new WaitForSeconds(5f); // 5초 동안 기다립니다.
+		
+		    string sceneName = "Mazescene";
+		    SceneManager.LoadScene(sceneName);
+	}
+    */
+
+    
 
 
    /*rivate void ResetCoins()
