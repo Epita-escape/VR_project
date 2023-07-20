@@ -4,7 +4,16 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/MazeScene.unity
+    guid: 96273e9b14049c743b1a87c8167dd7cf
+  - enabled: 0
+    path: Assets/Scenes/CafeteriaScene.unity
+    guid: 9ddbb02e81405b6428c84029d5627594
+  - enabled: 0
+    path: Assets/Brick Project Studio/Fast Food Restaurant Kit/Scene/FFK Sample Scene.unity
+    guid: 14f382b3442cba3438d7cbf0ebd2f197
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 301756cc567dfe64696422ad9f4ee8de, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 633e7b142117b3f4f95e1014499dc8be, type: 2}
